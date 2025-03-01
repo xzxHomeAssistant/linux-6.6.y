@@ -356,6 +356,7 @@
 	external_phy: ethernet-phy@0 {
 		/* Realtek RTL8211F (0x001cc916) */
 		reg = <0>;
+                compatible ="ethernet-phy-id001c.c916"; 
 		max-speed = <1000>;
 		eee-broken-1000t;
 
