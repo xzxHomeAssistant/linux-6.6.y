@@ -360,7 +360,6 @@
 		max-speed = <1000>;
 		eee-broken-1000t;
 
-                reset-delays-us = <0 10000 100000>; 
 		reset-assert-us = <10000>;
 		reset-deassert-us = <80000>;
 		reset-gpios = <&gpio GPIOZ_15 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
@@ -380,6 +379,7 @@
 
 	amlogic,tx-delay-ns = <2>;
 
+        snps,reset-delays-us = <0 10000 1000000>; // 复位时序
 	snps,aal;
 	snps,rxpbl = <0x8>;
 	snps,txpbl = <0x8>;
