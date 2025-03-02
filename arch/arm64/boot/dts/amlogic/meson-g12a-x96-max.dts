@@ -4,12 +4,12 @@
  */
 
 /dts-v1/;
-/*
+
 #include "meson-g12a.dtsi"
-#include "dt-bindings/gpio/gpio.h"
-#include "dt-bindings/gpio/meson-g12a-gpio.h"
-#include "dt-bindings/sound/meson-g12a-tohdmitx.h"
-*/
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/gpio/meson-g12a-gpio.h>
+#include <dt-bindings/sound/meson-g12a-tohdmitx.h>
+
 / {
 	compatible = "amediatech,x96-max", "amlogic,g12a";
 	//model = "Shenzhen Amediatech Technology Co., Ltd X96 Max";
