@@ -1,6 +1,8 @@
 name: Build DTB for X96 Max
 
 on:
+  repository_dispatch:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths: [ 'dts/**', 'scripts/**' ]
