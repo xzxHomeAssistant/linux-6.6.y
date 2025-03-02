@@ -20,7 +20,7 @@ jobs:
       - name: Build DTB
         run: |
           mkdir -p dtb
-          for dts in dts/*.dts; do
+          for dts in arch/arm64/boot/dts/amlogic/*.dts; do
             dtc -I dts -O dtb -o dtb/$(basename $dts .dts).dtb $dts
           done
           tree dtb
