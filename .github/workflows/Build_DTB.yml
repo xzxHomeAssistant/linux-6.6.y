@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    paths: [ 'arch/arm64/boot/dts/amlogic/**', 'scripts/**' ]
+    paths: [ 'arch/arm64/boot/dts/amlogic/**', 'scripts/**', 'include/**'  ]
   pull_request:
     paths: [ 'arch/arm64/boot/dts/amlogic/**' ]
 
